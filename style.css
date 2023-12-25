@@ -36,3 +36,22 @@
 .page-thunder-to-text input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.1);
 }
+/* Apply these styles to make the canvas cover the entire viewport */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-thunder-to-text {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
