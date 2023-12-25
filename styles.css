@@ -1,0 +1,84 @@
+/* Red Sloped Section */
+.red-sloped-section {
+    position: absolute;
+    top: -100%; /* Start the red section outside the viewport */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 20vw));
+    background-color: red;
+    animation: slideFromTop 2s forwards;
+  }
+  
+  @keyframes slideFromTop {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
+  
+  /* Tab Bar */
+  .tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    z-index: 9999; /* Ensure the tab bar is above other content */
+  }
+  /* Additional styles for the tab content text color */
+
+/* Additional styles for the tab sections (buttons) */
+.tab-section {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Initial style for the active tab */
+  .active-tab {
+    background-color: #f00; /* Change color to signify active tab */
+    color: white; /* Text color for the active tab */
+  }
+  
+  /* Hide all tab content items by default */
+  .tab-content-item {
+    display: none;
+  }
+  
+  /* Show the active tab content */
+  .tab-content-item.active-content {
+    display: block;
+  }
+    
+
+  /* Add this to your existing CSS file or create a new one */
+
+/* Centered text */
+/* Add or update these styles in your CSS file */
+
+/* Home text */
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure it's above other elements */
+  }
+  
+  .home-text h1 {
+    color: white;
+    font-family: Arial, sans-serif; /* Change to desired font */
+    font-size: 4em; /* Increase font size for better visibility */
+    font-weight: bold; /* Adjust font weight if needed */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 4px; /* Increase letter spacing for better readability */
+  }
+  
+  
+  
