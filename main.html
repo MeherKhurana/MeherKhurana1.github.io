@@ -1,51 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Slope Page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="red-sloped-section"></div>
 
-  <div class="tab-bar">
-    <div class="tab-section" onclick="Project1">Project 1</div>
-    <div class="tab-section" onclick="Project2">Project 2</div>
-    <div class="tab-section" onclick="Project3">Project 3</div>
-    <div class="tab-section" onclick="Project4">Project 4</div>
-    <div class="tab-section" onclick="Project5">Project 5</div>
-  </div>
+  
+  <header class="container">
+      <div class="page-header">
+          <input type="checkbox" id="click">
 
-  <div class="tab-content">
-    <div class="tab-content-item">
-      <!-- Content for Tab 1 -->
-      <h2 style="color: white;">Tab 1 Content</h2>
-      <p style="color: white;">This is the content for Tab 1.</p>
-    </div>
-    <div class="tab-content-item">
-      <!-- Content for Tab 2 -->
-      <h2 style="color: white;">Tab 2 Content</h2>
-      <p style="color: white;">This is the content for Tab 2.</p>
-    </div>
-    <div class="tab-content-item">
-      <!-- Content for Tab 3 -->
-      <h2 style="color: white;">Tab 3 Content</h2>
-      <p style="color: white;">This is the content for Tab 3.</p>
-    </div>
-    <div class="tab-content-item">
-      <!-- Content for Tab 4 -->
-      <h2 style="color: white;">Tab 4 Content</h2>
-      <p style="color: white;">This is the content for Tab 4.</p>
-    </div>
-    <div class="tab-content-item">
-      <!-- Content for Tab 5 -->
-      <h2 style="color: white;">Tab 5 Content</h2>
-      <p style="color: white;">This is the content for Tab 5.</p>
-    </div>
-  </div>
+          <label for="click" class="mainicon">
+              <div class="menu">
+                  <i class='bx bx-menu'></i>
+              </div>
+          </label>
+          <ul>
+              <li><a href="#"  class="active" style="--navAni:1">Home</a></li>
+              <li><a href="p1.html" style="--navAni:2">About</a></li>
+              <li><a href="p2.html" style="--navAni:3">Skills</a></li>
+              <li><a href="p3.html" style="--navAni:4">Portfolio</a></li>
+          </ul>
+      </div>
+  </header>
 
-  <script src="script.js"></script>
+  <section class="container">
+    <div class="main">
+        <div class="images">
+            <img src="f-2.png" alt="" class="img-w">
+        </div>
+        <div class="detail">
+            <h3>Hi, I'm</h3>
+            <h1><span style="color:#ffffff;">Meher</span> <span style="color:#000000;">Khurana</span> </h1>   
+        </div>
+    </div>
+</section>
 </body>
 </html>
-x
